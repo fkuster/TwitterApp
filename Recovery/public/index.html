@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <style type="text/css"> html, body, #map_canvas { height: 100%;width: 96%; margin: 1%; padding: 0;} </style>
+      <title>Diplomski rad</title>
+      <link rel="stylesheet", href="/stylesheets/style.css">
+      <script src="https://github.jspm.io/jmcriffey/bower-traceur-runtime@0.0.87/traceur-runtime.js"></script>
+      <script src="https://jspm.io/system@0.16.js"></script>
+      <script src="https://code.angularjs.org/2.0.0-alpha.28/angular2.dev.js"></script>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=true_or_false"></script>
+      <script src='/socket.io/socket.io.js'></script>
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <script src="http://code.highcharts.com/highcharts.js"></script>
+      <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+
+  </head>
+  <body>
+      <script src="javascripts/twitterData.js"> </script>
+        <div class="container">
+      <div class="jumbotron">
+        <div class="container">
+        <h1>Vizualizacija postova s Twitter društvene mreže</h1>
+        <p>Diplomski rad, Filip Kuster</p>
+      </div>
+      </div>
+
+      <div class="container">
+      <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+      <div id="container3" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+      <div id="container2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+    </div>
+    </div>
+      <twitter-app></twitter-app>
+      <script>System.import('app');</script>
+  </body>
+  </html>
